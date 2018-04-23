@@ -1,0 +1,8 @@
+
+
+<div class="talk-bubble tri-right left-top" *ngFor="let taskList of TaskLists">
+  <div class="talktext">
+    <p>{{taskList.Name}}</p>
+  </div>
+</div>
+<button class="btn btn-info" (click)="addToaster()">Add Toaster</button>

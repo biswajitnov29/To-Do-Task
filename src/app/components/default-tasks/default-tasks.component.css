@@ -1,0 +1,11 @@
+.task-card{
+    width: 18rem;
+    display: inline-block;
+    margin: 10px;
+}
+.taskListHeader{
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    font-size: 20px;
+    cursor: pointer;
+}

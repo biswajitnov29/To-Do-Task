@@ -1,0 +1,17 @@
+<div class="toaster-wrapper">
+    <aside >
+        <div class="alert alert-dismissible fade show" 
+             *ngFor="let msg of getMessages() | reverse"
+             [ngClass]="{
+                        'alert-warning':msg.style=='info',
+                        'alert-success':msg.style=='success',
+                        'alert-danger':msg.style=='danger'
+                        }"
+             role="alert">
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="dismiss(msg)">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </aside>
+</div>

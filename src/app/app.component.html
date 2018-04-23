@@ -1,0 +1,43 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<div class="container-fluid">
+<!--
+    <nav class="">
+        <span (click)="openNav()">open</span>
+    </nav>
+-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <span class="navbar-toggler-icon" (click)="openNav()"></span>
+        <a class="navbar-brand" href="#">To-Do-Tasks</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+<!--
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+-->
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <router-outlet></router-outlet>
+    </div>
+    
+    <app-toast-messages></app-toast-messages>
+</div>
